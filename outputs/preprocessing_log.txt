@@ -1,0 +1,11 @@
+Etapas de Pré-processamento:
+- Coluna 'ignore' removida por inutilidade.
+- Coluna 'Parabolic_SAR' removida devido à alta porcentagem de valores ausentes (~50%).
+- Linhas com valores ausentes (NaN) removidas. Total de linhas removidas: 43.
+- Coluna 'time' definida como índice do DataFrame.
+- Dados pré-processados salvos em '../outputs/binance_data_preprocessed.csv'.
+--- Adição de Indicadores de Trading (Cálculo Manual) ---
+- Indicadores já presentes no dataset: SMA_10, EMA_10, MACD, BB_High, BB_Middle, BB_Low, ADX
+- Indicador ATR (Average True Range, período 14) calculado manualmente e adicionado como 'ATR_14'.
+- 0 linhas removidas devido a NaNs gerados pelo cálculo do ATR.
+- DataFrame atualizado com ATR salvo em '../outputs/binance_data_preprocessed.csv'.

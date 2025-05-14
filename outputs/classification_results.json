@@ -1,0 +1,11 @@
+{
+    "model_type": "Logistic Regression (TimeSeriesSplit)",
+    "target": "target_direction",
+    "metrics": {
+        "accuracy": 0.5030668127053669,
+        "precision": 0.5191869248969663,
+        "recall": 0.4359270488225384,
+        "f1_score": 0.45921295542694684
+    },
+    "classification_report": "              precision    recall  f1-score   support\n\n           0       0.49      0.57      0.53      4435\n           1       0.52      0.44      0.47      4695\n\n    accuracy                           0.50      9130\n   macro avg       0.51      0.51      0.50      9130\nweighted avg       0.51      0.50      0.50      9130\n"
+}
