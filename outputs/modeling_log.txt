@@ -222,3 +222,59 @@ Relatório de Classificação Geral:
   - precision: 0.5356
   - recall: 0.2893
   - f1_score: 0.3391
+--- Modelagem: Regressão Linear ---
+- Total de observações: 10956
+- Features utilizadas: 30
+- Fold 1: MSE=0.000045, RMSE=0.0067, MAE=0.0042, R²=0.9959
+- Fold 2: MSE=0.000947, RMSE=0.0308, MAE=0.0173, R²=0.9983
+- Fold 3: MSE=0.000894, RMSE=0.0299, MAE=0.0207, R²=0.9965
+- Fold 4: MSE=0.000149, RMSE=0.0122, MAE=0.0077, R²=0.9977
+- Fold 5: MSE=0.001708, RMSE=0.0413, MAE=0.0267, R²=0.9968
+- Média dos Folds: MSE=0.000749, RMSE=0.0242, MAE=0.0153, R²=0.9970
+- Resultados salvos em 'outputs/regression_results.json'.
+--- Modelagem: Random Forest com TimeSeriesSplit ---
+- Total de observações: 10957
+- Features: 30 colunas
+- Fold 1: Accuracy=0.4847, Precision=0.5714, Recall=0.0379, F1=0.0711
+- Fold 2: Accuracy=0.4929, Precision=0.5584, Recall=0.1597, F1=0.2484
+- Fold 3: Accuracy=0.5126, Precision=0.5077, Recall=0.6898, F1=0.5849
+- Fold 4: Accuracy=0.4841, Precision=0.4981, Recall=0.5490, F1=0.5223
+- Fold 5: Accuracy=0.4978, Precision=0.5428, Recall=0.1553, F1=0.2415
+
+- Importância das Variáveis (ordenadas):
+  - pct_change: 0.0598
+  - Chaikin_Volatility: 0.0524
+  - MFI: 0.0466
+  - ADX: 0.0452
+  - RSI: 0.0445
+  - price_range: 0.0443
+  - TRIX: 0.0435
+  - MACD: 0.0432
+  - OBV: 0.0421
+  - num_trades: 0.0418
+  - taker_buy_base_asset_volume: 0.0397
+  - quote_asset_volume: 0.0395
+  - taker_buy_quote_asset_volume: 0.0389
+  - volume: 0.0389
+  - close_time: 0.0381
+  - BB_Low: 0.0313
+  - BB_High: 0.0309
+  - close: 0.0295
+  - low: 0.0287
+  - open: 0.0284
+  - high: 0.0283
+  - SMA_10: 0.0280
+  - Keltner_High: 0.0280
+  - Keltner_Low: 0.0277
+  - BB_Middle: 0.0276
+  - VWAP: 0.0271
+  - EMA_10: 0.0262
+  - std_dev: 0.0000
+  - mean: 0.0000
+  - median: 0.0000
+
+- Média das métricas nos folds:
+  - accuracy: 0.4944
+  - precision: 0.5357
+  - recall: 0.3183
+  - f1_score: 0.3336
